@@ -1,0 +1,1 @@
+web: java -jar ./build/libs/HerokuApp-0.0.1-all.jar
