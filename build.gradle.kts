@@ -33,3 +33,8 @@ sourceSets["main"].resources.srcDirs("resources")
 tasks.shadowJar {
     archiveBaseName.set("HerokuApp")
 }
+
+task("stage") {
+    dependsOn.add("build")
+    dependsOn.add("shadowJar")
+}
