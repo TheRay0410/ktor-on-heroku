@@ -5,9 +5,10 @@ import io.ktor.http.ContentType
 import io.ktor.response.respondText
 import io.ktor.routing.Routing
 import io.ktor.routing.get
+import io.ktor.routing.post
 
 fun Routing.root() {
-    get("/") {
+    post("/CircleLine") {
         call.respondText("Hello World!", ContentType.Text.Plain)
     }
 }
